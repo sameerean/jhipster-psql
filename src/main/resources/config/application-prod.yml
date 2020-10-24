@@ -42,18 +42,18 @@ spring:
     elasticsearch:
       client:
         reactive:
-          endpoints: localhost:9200
+          endpoints: jhipsterpsql-elasticsearch:9200
   # Replace by 'prod, faker' to add the faker context and have sample data loaded in production
   liquibase:
     contexts: prod
-    url: jdbc:postgresql://localhost:5432/jhipsterpsql
+    url: jdbc:postgresql://jhipsterpsql-postgresql:5432/jhipsterpsql
   mail:
     host: localhost
     port: 25
     username:
     password:
   r2dbc:
-    url: r2dbc:postgresql://localhost:5432/jhipsterpsql
+    url: r2dbc:postgresql://jhipsterpsql-postgresql:5432/jhipsterpsql
     username: jhipsterpsql
     password:
   thymeleaf:

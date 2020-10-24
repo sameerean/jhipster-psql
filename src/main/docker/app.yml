@@ -18,6 +18,12 @@ services:
     extends:
       file: postgresql.yml
       service: jhipsterpsql-postgresql
+  jhipsterpsql-pgadmin:
+    extends:
+      file: pgadmin.yml
+      service: jhipsterpsql-pgadmin
+    links:
+      - "jhipsterpsql-postgresql:jhipsterpsql"
   jhipsterpsql-elasticsearch:
     extends:
       file: elasticsearch.yml
@@ -29,3 +35,6 @@ services:
     environment:
       - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_TYPE=native
       - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_SEARCH_LOCATIONS=file:./central-config/docker-config/
+volumes:
+  db-data:
+  pgadmin-data:
