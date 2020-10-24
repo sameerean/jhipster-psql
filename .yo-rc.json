@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.homecloud.jhipsterpsql"
+    },
+    "jhipsterVersion": "6.10.4",
+    "applicationType": "monolith",
+    "baseName": "jhipsterpsql",
+    "packageName": "com.homecloud.jhipsterpsql",
+    "packageFolder": "com/homecloud/jhipsterpsql",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZDNkY2VkMGRhM2ZlN2UyZjA1NjU1YWE3Y2UyNGQxNDMyNDE0OTNjNGY2ZDllNjEwNzBjM2Y0ZGQyNTc0NzU3NjdiMGM4ZDJkNzJmOTA4MjBhMWE0YmIwZjZkYzM0YmIzZmFiMTUzMGM4ZjkyMDJlZmY2N2I3YWMwM2MwZDg1Nzg=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "cerulean",
+    "clientThemeVariant": "dark",
+    "creationTimestamp": 1603526435715,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": [],
+    "reactive": true
+  }
+}
